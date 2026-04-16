@@ -4,10 +4,10 @@ cask "kubectl" do
 
   on_macos do
     on_arm do
-      url "https://github.com/sylr/kubernetes/releases/download/v#{version}/kubernetes-v#{version}-darwin-arm64",
+      url "https://github.com/sylr/kubernetes/releases/download/v#{version}/kubectl-v#{version}-darwin-arm64",
         verified: "github.com/sylr/kubernetes/"
-      sha256 "50e7b9638119eaa026966a883b793cb29ee93a1a67b4e62fb87308450d0e4344"
-      binary "kubernetes-v1.37.0-alpha.0+sylr.1-darwin-arm64", target: "kubectl-1.37.0-alpha.0+sylr.1-darwin-arm64"
+      sha256 "4bc00f9ae0d9b3dcf083b949e10a55b4ef9e4f688a04229e4d25bc45376f9e92"
+      binary "kubectl-v1.37.0-alpha.0+sylr.1-darwin-arm64", target: "kubectl-1.37.0-alpha.0+sylr.1-darwin-arm64"
     end
   end
 
