@@ -4,17 +4,17 @@ cask "kubectl" do
     on_macos do
       run "/usr/bin/xattr",
           args: ["-dr", "com.apple.quarantine",
-                 "{{staged_path}}/kubectl-v1.37.0+sylr.2-darwin-arm64"]
+                 "{{staged_path}}/kubectl-v1.37.1+sylr.1-darwin-arm64"]
     end
   end
 
-  version "1.37.0+sylr.2"
+  version "1.37.1+sylr.1"
 
   on_macos do
     on_arm do
-      sha256 "190be385aa03394535aa1bcd72295e6a2298f600c9f07c60f9f3bf475868dc8c"
+      sha256 "db3a1dc121e5163ca59d04fe4baf57fcbfd724b8bfc75d9205490d794706def7"
       url "https://github.com/sylr/kubernetes/releases/download/v#{version}/kubectl-v#{version}-darwin-arm64"
-      binary "kubectl-v1.37.0+sylr.2-darwin-arm64", target: "kubectl"
+      binary "kubectl-v1.37.1+sylr.1-darwin-arm64", target: "kubectl"
     end
   end
 
@@ -26,7 +26,7 @@ cask "kubectl" do
     skip "Auto-generated on release."
   end
 
-  generate_completions_from_executable "kubectl-v1.37.0+sylr.2-darwin-arm64",
+  generate_completions_from_executable "kubectl-v1.37.1+sylr.1-darwin-arm64",
     base_name: "kubectl",
     shell_parameter_format: :cobra,
     shells: [:bash, :zsh, :fish]
