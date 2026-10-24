@@ -7,30 +7,30 @@ cask "nats" do
     end
   end
 
-  version "0.4.0+sylr.12"
+  version "0.5.0+sylr.1"
 
   on_macos do
     on_arm do
-      sha256 "102946acaeed36ff9e710e18fd0ead20395c50a9f5d00d72ed2bb03a8be1c3f2"
+      sha256 "333d6ce88f7b61e18dd76382a98d6c0296d83bf62bf06227336f17ed612c4bbd"
       url "https://github.com/sylr/natscli/releases/download/v#{version}/nats-v#{version}-darwin-arm64.tar.gz"
-      rename "nats-v0.4.0+sylr.12-darwin-arm64/nats", "nats"
+      rename "nats-v0.5.0+sylr.1-darwin-arm64/nats", "nats"
     end
     on_intel do
-      sha256 "36e1c992ab09f63280345da422c946513f5f5fac0ccdc8d39d918153d06d3900"
+      sha256 "e3e7a48e371700b417c269e0bcb76775388b57ddcf11756c8547ff6947c39d5e"
       url "https://github.com/sylr/natscli/releases/download/v#{version}/nats-v#{version}-darwin-amd64.tar.gz"
-      rename "nats-v0.4.0+sylr.12-darwin-amd64/nats", "nats"
+      rename "nats-v0.5.0+sylr.1-darwin-amd64/nats", "nats"
     end
   end
   on_linux do
     on_arm do
-      sha256 "6284818ba19651908bf2b7d1ec2e6e94e0c735cdb85baf0bcbba797bee5e8b18"
+      sha256 "c6fb088428a1a0ab0a7e2788fab33ee07e3f4eab78cd16a5fab377a989670d9e"
       url "https://github.com/sylr/natscli/releases/download/v#{version}/nats-v#{version}-linux-arm64.tar.gz"
-      rename "nats-v0.4.0+sylr.12-linux-arm64/nats", "nats"
+      rename "nats-v0.5.0+sylr.1-linux-arm64/nats", "nats"
     end
     on_intel do
-      sha256 "c726c218f8a1a904b1f4a3ef49a2c9ce685d7d14db3a1fc08855c9f11d17d8bb"
+      sha256 "a96a02cf0beeb485ec01bf065762c3900a0ff243bb4da632e828942aef8d5ba5"
       url "https://github.com/sylr/natscli/releases/download/v#{version}/nats-v#{version}-linux-amd64.tar.gz"
-      rename "nats-v0.4.0+sylr.12-linux-amd64/nats", "nats"
+      rename "nats-v0.5.0+sylr.1-linux-amd64/nats", "nats"
     end
   end
 
