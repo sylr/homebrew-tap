@@ -9,15 +9,15 @@ cask "op-broker" do
     end
   end
 
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     on_intel do
-      sha256 "e0351931d827241017c1e8a7df87cd13173f5e4e096a71d4073badc9403a9070"
+      sha256 "0fd683341abe967666c44c1eab9d3a2565b5f3c74af6e7c9d59d65b533f1a6c7"
       url "https://github.com/sylr/op-broker/releases/download/v#{version}/op-broker_v#{version}_darwin_amd64.tar.gz"
     end
     on_arm do
-      sha256 "112e0570b63a783d6991a64a53f5ce9c2084df3951fa1fc2ec105d756fcae290"
+      sha256 "f6571e20e365e739391b10de0a995bb7259624c1749f0bf9f792d284c60eab9e"
       url "https://github.com/sylr/op-broker/releases/download/v#{version}/op-broker_v#{version}_darwin_arm64.tar.gz"
     end
   end
@@ -40,8 +40,9 @@ cask "op-broker" do
 
   caveats <<~EOS
     opbd must run as a LaunchAgent in your GUI session (1Password desktop-app
-    integration needs it). See the README for the configuration file, the
-    first interactive tailnet login and the LaunchAgent setup:
-      https://github.com/sylr/op-broker#install
+    integration needs it). Write the configuration file and join the tailnet
+    once by running opbd by hand, then install the LaunchAgent with:
+      opbd agent install
+    See https://github.com/sylr/op-broker#server-mac
   EOS
 end
